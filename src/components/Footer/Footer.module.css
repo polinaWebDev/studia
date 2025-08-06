@@ -1,0 +1,37 @@
+.footer {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    p {
+        padding: 70px 0 60px 0;
+
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    span {
+        color: #5B5C5D;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.wrapper {
+    padding: 60px 0;
+    border-top: 1px solid #5B5C5D;
+    border-bottom: 1px solid #5B5C5D;
+}

@@ -1,0 +1,57 @@
+:root {
+    /* Title */
+    --text-title-color: #FFF;
+    --text-title-font-family: Inter;
+    --text-title-font-size: 20px;
+    --text-title-font-style: normal;
+    --text-title-font-weight: 400;
+    --text-title-line-height: 160%;
+
+    /* Body */
+    --text-subtitle-color: #FFF;
+    --text-subtitle-font-family: Inter;
+    --text-subtitle-font-size: 14px;
+    --text-subtitle-font-style: normal;
+    --text-subtitle-font-weight: 400;
+    --text-subtitle-line-height: 160%;
+}
+
+body {
+    color: var(--text-subtitle-color);
+    font-family: var(--text-subtitle-font-family);
+    font-size: var(--text-subtitle-font-size);
+    font-style: var(--text-subtitle-font-style);
+    font-weight: var(--text-subtitle-font-weight);
+    line-height: var(--text-subtitle-line-height);
+}
+
+body * {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.subtitle {
+    color: var(--text-subtitle-color);
+    font-family: var(--text-subtitle-font-family);
+    font-size: var(--text-subtitle-font-size);
+    font-style: var(--text-subtitle-font-style);
+    font-weight: var(--text-subtitle-font-weight);
+    line-height: var(--text-subtitle-line-height);
+}
+
+.text-white {
+    color: var(--text-title-color);
+}
+
+.text-black {
+    color: #333;
+}
+
+.container {
+    width: 345px;
+    margin: 0 auto;
+}

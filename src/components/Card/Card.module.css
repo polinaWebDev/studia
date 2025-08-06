@@ -1,0 +1,8 @@
+.card {
+    min-width: 335px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    padding-bottom: 60px;
+}

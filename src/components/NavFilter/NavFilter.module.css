@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 21px 0 21px 0;
+    overflow-x: auto;
+
+    button:not(:active) {
+        border: 1px solid #181818;
+    }
+}
+.divider {
+    display: flex;
+    width: 1px;
+    height: 28px;
+    background: #5B5C5D;
+    margin: 0 16px;
+    flex-shrink: 0;
+}

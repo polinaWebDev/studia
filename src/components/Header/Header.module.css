@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D6D9DC;
+    padding: 18px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 30px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.textWhite {
+    color: #fff;
+}
+
+.textBlack {
+    color: #000;
+}
+
+.menuButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.asideMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.closeButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.navList li {
+    margin-bottom: 1rem;
+}
+
+.navList a {
+    text-decoration: none;
+    color: inherit;
+}

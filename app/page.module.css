@@ -1,0 +1,40 @@
+.main {
+    position: relative;
+}
+.wrapper {
+    background-color: #181818;
+    margin-top: 200px;
+    position: relative;
+}
+
+.houseImg {
+    position: absolute;
+    right: 20%;
+    top: -12%;
+    z-index: 99;
+}
+
+
+.architecture {
+    position: absolute;
+    top: -10%;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 50px 0;
+
+    button {
+        font-size: inherit;
+        width: 135px;
+        color: var(--text-subtitle-color);
+    }
+}
+
+.articles {
+    background-color: #181818;
+    display: flex;
+    gap: 60px;
+}

@@ -1,0 +1,15 @@
+.button {
+    display: inline-flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 57px;
+    border: 1px solid #FFF;
+    background-color: inherit;
+
+    width: auto;
+    white-space: nowrap;
+}
+
