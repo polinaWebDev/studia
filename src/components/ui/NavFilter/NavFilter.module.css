@@ -4,6 +4,8 @@
     flex-direction: row;
     padding: 21px 0 21px 0;
     overflow-x: auto;
+    border-top: 1px solid #5B5C5D;
+    border-bottom: 1px solid #5B5C5D;
 
     button:not(:active) {
         border: 1px solid #181818;

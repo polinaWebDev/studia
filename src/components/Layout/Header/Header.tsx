@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import styles from './Header.module.css';
-import Navigation from "@/components/Nav/Navigation";
+import Navigation from "@/components/Layout/Nav/Navigation";
 
 
 function Header() {
@@ -18,7 +18,7 @@ function Header() {
             <header className={clsx(styles.header, "text-black")}>
                     <div className="container">
                         <nav>
-                            <Link href='/'>architecture</Link>
+                            <Link href='/public'>architecture</Link>
 
                             <button onClick={toggleMenu} className={styles.menuButton} aria-label="Toggle menu">
                                 ☰

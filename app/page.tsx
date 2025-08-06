@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './page.module.css';
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import clsx from "clsx";
-import {getServerSideProps} from "@/lib/api/articles";
-import {Card} from "@/components/Card/Card";
-import NavFilter from "@/components/NavFilter/NavFilter";
+import {Card} from "@/components/ui/Card/Card";
+import NavFilter from "@/components/ui/NavFilter/NavFilter";
+import { BodyText } from '@/components/ui/Typography';
 
 const ArticleMocks = [
     {
@@ -39,10 +39,14 @@ async function Page() {
             <div className={clsx(styles.wrapper, "text-black")}>
                <div className="container">
                    <div className={styles.inner}>
-                       <p className='text-white'>
+                       <BodyText>
                            We, as a brand, turn your dreams into fantastique interiors and architectural designs. Our projects inspire the pursuit of your great aspirations. We create the alchemy of luxury and the enjoyment of our clientèle
-                       </p>
-                       <Button>All projects</Button>
+                       </BodyText>
+                       <Button>
+                           <BodyText>
+                               All projects
+                           </BodyText>
+                       </Button>
                    </div>
                </div>
             </div>

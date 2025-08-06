@@ -1,0 +1,116 @@
+/* Typography Variables */
+:root {
+    /* Font Family */
+    --font-family-primary: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Colors */
+    --color-white: #FFF;
+    --color-gray-400: #5B5C5D;
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-gray-400);
+
+    /* Font Sizes */
+    --font-size-sm: 14px;    /* Small text */
+    --font-size-md: 16px;    /* Base/Medium text */
+    --font-size-lg: 20px;    /* Large text */
+    --font-size-xl: 32px;    /* Extra large text */
+
+    /* Line Heights */
+    --line-height-normal: normal;
+    --line-height-relaxed: 160%; /* 1.6 */
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+
+    /* Typography Tokens */
+
+    /* Small Text - 14px */
+    --typography-small-color: var(--color-text-primary);
+    --typography-small-font-family: var(--font-family-primary);
+    --typography-small-font-size: var(--font-size-sm);
+    --typography-small-font-weight: var(--font-weight-normal);
+    --typography-small-line-height: var(--line-height-relaxed);
+    --typography-small-font-style: normal;
+
+    /* Medium Text - 16px */
+    --typography-medium-color: var(--color-text-secondary);
+    --typography-medium-font-family: var(--font-family-primary);
+    --typography-medium-font-size: var(--font-size-md);
+    --typography-medium-font-weight: var(--font-weight-normal);
+    --typography-medium-line-height: var(--line-height-normal);
+    --typography-medium-font-style: normal;
+    --typography-medium-text-align: right;
+
+    /* Large Text - 20px */
+    --typography-large-color: var(--color-text-primary);
+    --typography-large-font-family: var(--font-family-primary);
+    --typography-large-font-size: var(--font-size-lg);
+    --typography-large-font-weight: var(--font-weight-normal);
+    --typography-large-line-height: var(--line-height-relaxed);
+    --typography-large-font-style: normal;
+
+    /* Extra Large Text - 32px */
+    --typography-xl-color: var(--color-text-primary);
+    --typography-xl-font-family: var(--font-family-primary);
+    --typography-xl-font-size: var(--font-size-xl);
+    --typography-xl-font-weight: var(--font-weight-normal);
+    --typography-xl-line-height: var(--line-height-relaxed);
+    --typography-xl-font-style: normal;
+}
+
+/* Typography Utility Classes */
+.typography-small {
+    color: var(--typography-small-color);
+    font-family: var(--typography-small-font-family);
+    font-size: var(--typography-small-font-size);
+    font-style: var(--typography-small-font-style);
+    font-weight: var(--typography-small-font-weight);
+    line-height: var(--typography-small-line-height);
+}
+
+.typography-medium {
+    color: var(--typography-medium-color);
+    font-family: var(--typography-medium-font-family);
+    font-size: var(--typography-medium-font-size);
+    font-style: var(--typography-medium-font-style);
+    font-weight: var(--typography-medium-font-weight);
+    line-height: var(--typography-medium-line-height);
+    text-align: var(--typography-medium-text-align);
+}
+
+.typography-large {
+    color: var(--typography-large-color);
+    font-family: var(--typography-large-font-family);
+    font-size: var(--typography-large-font-size);
+    font-style: var(--typography-large-font-style);
+    font-weight: var(--typography-large-font-weight);
+    line-height: var(--typography-large-line-height);
+}
+
+.typography-xl {
+    color: var(--typography-xl-color);
+    font-family: var(--typography-xl-font-family);
+    font-size: var(--typography-xl-font-size);
+    font-style: var(--typography-xl-font-style);
+    font-weight: var(--typography-xl-font-weight);
+    line-height: var(--typography-xl-line-height);
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+    :root {
+        --font-size-sm: 16px;
+        --font-size-md: 18px;
+        --font-size-lg: 24px;
+        --font-size-xl: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --font-size-sm: 16px;
+        --font-size-md: 18px;
+        --font-size-lg: 24px;
+        --font-size-xl: 48px;
+    }
+}

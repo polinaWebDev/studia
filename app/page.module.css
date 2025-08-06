@@ -1,5 +1,10 @@
 .main {
     position: relative;
+
+    section {
+        display: flex;
+        gap: 60px;
+    }
 }
 .wrapper {
     background-color: #181818;

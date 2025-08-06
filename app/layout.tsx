@@ -1,7 +1,8 @@
-import Header from "@/components/Header/Header";
+import Header from "@/components/Layout/Header/Header";
 import "./../src/styles/global.css"
 import "./../src/styles/reset.css"
-import Footer from "@/components/Footer/Footer";
+import "./../src/styles/typography.variables.css"
+import Footer from "@/components/Layout/Footer/Footer";
 
 export default function RootLayout({
   children,

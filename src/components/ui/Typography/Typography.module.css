@@ -1,0 +1,73 @@
+/* Typography Component Styles */
+
+/* Base Typography Variants */
+.typography-small {
+    color: var(--typography-small-color);
+    font-family: var(--typography-small-font-family);
+    font-size: var(--typography-small-font-size);
+    font-style: var(--typography-small-font-style);
+    font-weight: var(--typography-small-font-weight);
+    line-height: var(--typography-small-line-height);
+    margin: 0;
+}
+
+.typography-medium {
+    color: var(--typography-medium-color);
+    font-family: var(--typography-medium-font-family);
+    font-size: var(--typography-medium-font-size);
+    font-style: var(--typography-medium-font-style);
+    font-weight: var(--typography-medium-font-weight);
+    line-height: var(--typography-medium-line-height);
+    text-align: var(--typography-medium-text-align);
+    margin: 0;
+}
+
+.typography-large {
+    color: var(--typography-large-color);
+    font-family: var(--typography-large-font-family);
+    font-size: var(--typography-large-font-size);
+    font-style: var(--typography-large-font-style);
+    font-weight: var(--typography-large-font-weight);
+    line-height: var(--typography-large-line-height);
+    margin: 0;
+}
+
+.typography-xl {
+    color: var(--typography-xl-color);
+    font-family: var(--typography-xl-font-family);
+    font-size: var(--typography-xl-font-size);
+    font-style: var(--typography-xl-font-style);
+    font-weight: var(--typography-xl-font-weight);
+    line-height: var(--typography-xl-line-height);
+    margin: 0;
+}
+
+/* Color Modifiers */
+.color-primary {
+    color: var(--color-text-primary);
+}
+
+.color-secondary {
+    color: var(--color-text-secondary);
+}
+
+.color-inherit {
+    color: inherit;
+}
+
+/* Alignment Modifiers */
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-inherit {
+    text-align: inherit;
+}

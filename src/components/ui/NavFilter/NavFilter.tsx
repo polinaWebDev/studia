@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './NavFilter.module.css';
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 
 const FilterMocs = [
     {
