@@ -1,6 +1,3 @@
-/* Typography Component Styles */
-
-/* Base Typography Variants */
 .typography-small {
     color: var(--typography-small-color);
     font-family: var(--typography-small-font-family);
@@ -42,7 +39,6 @@
     margin: 0;
 }
 
-/* Color Modifiers */
 .color-primary {
     color: var(--color-text-primary);
 }
@@ -55,7 +51,6 @@
     color: inherit;
 }
 
-/* Alignment Modifiers */
 .align-left {
     text-align: left;
 }

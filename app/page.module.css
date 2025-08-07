@@ -1,5 +1,8 @@
 .main {
-    position: relative;
+
+    .container {
+        position: relative;
+    }
 
     section {
         display: flex;
@@ -14,9 +17,10 @@
 
 .houseImg {
     position: absolute;
-    right: 20%;
-    top: -12%;
+    top: 8%;
     z-index: 99;
+    width: 308px;
+    height: 240px;
 }
 
 

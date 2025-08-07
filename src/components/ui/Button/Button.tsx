@@ -1,4 +1,3 @@
-// Button.tsx
 import clsx from "clsx";
 import styles from './Button.module.css';
 
