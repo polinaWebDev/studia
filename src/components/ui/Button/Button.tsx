@@ -5,6 +5,7 @@ interface ButtonProps {
     children: React.ReactNode;
     variant?: 'primary' | 'secondary' | 'ghost';
     size?: 'sm' | 'md' | 'lg';
+    theme?: 'light' | 'dark';
     onClick?: () => void;
     className?: string;
 }
@@ -13,6 +14,7 @@ export default function Button({
                     children,
                     variant = 'primary',
                     size = 'md',
+                    theme = 'light',
                     onClick,
                     className
                 }: ButtonProps) {
@@ -22,6 +24,7 @@ export default function Button({
                 styles.button,
                 styles[variant],
                 styles[size],
+                styles[theme],
                 className
             )}
             onClick={onClick}

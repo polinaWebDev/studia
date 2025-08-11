@@ -1,15 +1,62 @@
-.button {
-    display: inline-flex;
-    padding: 16px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.button.light {
+    border: 1px solid #000;
+    background-color: inherit;
+}
 
-    border-radius: 57px;
+.button.dark {
     border: 1px solid #FFF;
     background-color: inherit;
+}
 
+/* Variant styles */
+.primary {
+    /* Default primary styles */
+}
+
+.secondary {
+    /* Secondary button styles */
+}
+
+.ghost {
+    /* Ghost button styles */
+}
+
+/* Size styles */
+.sm {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 184px;
+    box-sizing: border-box;
+}
+
+.md {
+    padding: 16px 30px;
+    font-size: 16px;
+}
+
+.lg {
+    padding: 20px 36px;
+    font-size: 18px;
+}
+
+/* Hover effects */
+.button.light:hover {
+    border-color: #000 !important;
+}
+
+.button.dark:hover {
+    border-color: #0066FF !important;
+}
+
+/* Base button styles */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 57px;
+    background-color: inherit;
     width: auto;
     white-space: nowrap;
+    transition: border-color 0.3s ease;
 }
 

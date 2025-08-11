@@ -13,6 +13,7 @@ interface TypographyProps {
     className?: string;
     color?: 'primary' | 'secondary' | 'inherit';
     align?: 'left' | 'center' | 'right' | 'inherit';
+    href?: string;
 }
 
 export function Typography({
@@ -22,6 +23,7 @@ export function Typography({
                                className,
                                color,
                                align,
+                                href
                            }: TypographyProps) {
     return (
         <Component
@@ -31,6 +33,7 @@ export function Typography({
                 align && styles[`align-${align}`],
                 className
             )}
+            href={href}
         >
             {children}
         </Component>

@@ -6,9 +6,34 @@
     overflow-x: auto;
     border-top: 1px solid #5B5C5D;
     border-bottom: 1px solid #5B5C5D;
+    gap: 16px;
 
     button:not(:active) {
         border: 1px solid #181818;
+    }
+}
+
+/* Mobile (320px - 767px) */
+@media (max-width: 767px) {
+    .nav {
+        gap: 12px;
+        padding: 16px 0;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav {
+        gap: 20px;
+        padding: 18px 0;
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    .nav {
+        gap: 24px;
+        padding: 21px 0;
     }
 }
 .divider {

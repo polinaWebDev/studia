@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './NavFilter.module.css';
-import Button from "@/components/ui/Button/Button";
+import Button from '../Button/Button';
 
 const FilterMocs = [
     {
@@ -24,7 +24,7 @@ function NavFilter() {
         <nav className={styles.nav}>
                 {FilterMocs.map((filter, index) => (
                     <React.Fragment key={filter.id}>
-                        <Button>{filter.name}</Button>
+                        <Button theme={"dark"}>{filter.name}</Button>
                         {index !== FilterMocs.length - 1 && (
                             <div className={styles.divider} />
                         )}

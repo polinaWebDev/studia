@@ -1,9 +1,18 @@
 import {strapi} from "@/lib/config/strapi.config";
 
-export async function getServerSideProps() {
+export async function getArticles() {
     try {
         const response = await strapi.find('articles', {
-            populate: '*',
+            populate: {
+                Hero: {
+                    populate: {
+                        background: true,
+                    },
+                },
+                seo: true,
+                tags: true,
+                preview: true,
+            },
         });
 
         return {

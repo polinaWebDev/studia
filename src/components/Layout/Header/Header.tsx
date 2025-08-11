@@ -5,6 +5,8 @@ import Link from 'next/link';
 import clsx from 'clsx';
 import styles from './Header.module.css';
 import Navigation from "@/components/Layout/Nav/Navigation";
+import MobileNavigation from "@/components/Layout/Nav/MobileNavigation";
+import { Container } from '@/components/Layout/Container';
 
 
 function Header() {
@@ -16,15 +18,21 @@ function Header() {
     return (
         <>
             <header className={clsx(styles.header, "text-black")}>
-                    <div className="container">
+                    <Container>
                         <nav>
                             <Link href='/public'>architecture</Link>
 
+                            {/* Desktop Navigation */}
+                            <div className={styles.desktopNav}>
+                                <Navigation />
+                            </div>
+
+                            {/* Mobile Menu Button */}
                             <button onClick={toggleMenu} className={styles.menuButton} aria-label="Toggle menu">
                                 ☰
                             </button>
                         </nav>
-                    </div>
+                    </Container>
             </header>
 
             {isOpen && (
@@ -32,8 +40,7 @@ function Header() {
                     <button onClick={toggleMenu} className={styles.closeButton} aria-label="Close menu">
                         ✕
                     </button>
-                    <Navigation/>
-                    <a href='tel:+79118183410'>+7 (911) 818-34-10</a>
+                    <MobileNavigation />
                 </aside>
             )}
         </>
